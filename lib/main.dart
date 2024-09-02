@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Artify AI",
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
