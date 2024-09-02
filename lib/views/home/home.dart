@@ -27,13 +27,15 @@ class HomePage extends ConsumerWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  const SizedBox(height: 20),
                   Text(
-                    'EvoVisioArt AI',
+                    'Artify AI',
                     style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: GoogleFonts.openSans().fontFamily),
+                      color: Colors.white,
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: GoogleFonts.openSans().fontFamily,
+                    ),
                   ),
                   const SizedBox(
                     height: 30,
@@ -44,10 +46,11 @@ class HomePage extends ConsumerWidget {
                           height: 320,
                           width: 320,
                           decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white, width: 2),
-                              borderRadius: BorderRadius.circular(
-                                12.0,
-                              )),
+                            border: Border.all(color: Colors.white, width: 2),
+                            borderRadius: BorderRadius.circular(
+                              12.0,
+                            ),
+                          ),
                           child: Image.memory(fWatch.imageData!),
                         )
                       : Container(
@@ -55,10 +58,11 @@ class HomePage extends ConsumerWidget {
                           height: 320,
                           width: 320,
                           decoration: BoxDecoration(
-                              color: const Color(0xff424242),
-                              borderRadius: BorderRadius.circular(
-                                12.0,
-                              )),
+                            color: const Color(0xff424242),
+                            borderRadius: BorderRadius.circular(
+                              12.0,
+                            ),
+                          ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -74,11 +78,11 @@ class HomePage extends ConsumerWidget {
                               Text(
                                 'No Image has been generated yet.',
                                 style: TextStyle(
-                                    color: Colors.grey[400],
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.w500,
-                                    fontFamily:
-                                        GoogleFonts.openSans().fontFamily),
+                                  color: Colors.grey[400],
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: GoogleFonts.openSans().fontFamily,
+                                ),
                               ),
                             ],
                           ),
@@ -90,26 +94,30 @@ class HomePage extends ConsumerWidget {
                     height: 160,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                        color: const Color(0xff424242),
-                        borderRadius: BorderRadius.circular(12.0)),
+                      color: const Color(0xff424242),
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
                     child: TextField(
                       controller: textController,
                       style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 17,
-                          fontWeight: FontWeight.w400,
-                          fontFamily: GoogleFonts.openSans().fontFamily),
+                        color: Colors.white,
+                        fontSize: 17,
+                        fontWeight: FontWeight.w400,
+                        fontFamily: GoogleFonts.openSans().fontFamily,
+                      ),
                       cursorColor: Colors.white,
                       maxLines: 5,
                       decoration: InputDecoration(
-                          hintText: 'Enter your prompt here...',
-                          hintStyle: TextStyle(
-                              color: Colors.grey[400],
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400,
-                              fontFamily: GoogleFonts.openSans().fontFamily),
-                          border: InputBorder.none,
-                          contentPadding: const EdgeInsets.all(12.0)),
+                        hintText: 'Enter your prompt here....',
+                        hintStyle: TextStyle(
+                          color: Colors.grey[400],
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          fontFamily: GoogleFonts.openSans().fontFamily,
+                        ),
+                        border: InputBorder.none,
+                        contentPadding: const EdgeInsets.all(12.0),
+                      ),
                     ),
                   ),
                   const SizedBox(
@@ -124,33 +132,35 @@ class HomePage extends ConsumerWidget {
                           fRead.searchingChange(true);
                         },
                         child: Container(
-                            alignment: Alignment.center,
-                            height: 60,
-                            width: 160,
-                            decoration: const BoxDecoration(
-                                gradient: LinearGradient(
-                                    begin: Alignment.topCenter,
-                                    end: Alignment.bottomCenter,
-                                    colors: [
-                                      Colors.deepPurpleAccent,
-                                      Colors.purple
-                                    ]),
-                                color: Colors.purpleAccent,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(12.0))),
-                            child: fWatch.isSearching == false
-                                ? Text(
-                                    'Generate',
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily:
-                                            GoogleFonts.openSans().fontFamily),
-                                  )
-                                : const CircularProgressIndicator(
+                          alignment: Alignment.center,
+                          height: 60,
+                          width: 160,
+                          decoration: const BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [Colors.deepPurpleAccent, Colors.purple],
+                            ),
+                            color: Colors.purpleAccent,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(12.0),
+                            ),
+                          ),
+                          child: fWatch.isSearching == false
+                              ? Text(
+                                  'Generate',
+                                  style: TextStyle(
                                     color: Colors.white,
-                                  )),
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily:
+                                        GoogleFonts.openSans().fontFamily,
+                                  ),
+                                )
+                              : const CircularProgressIndicator(
+                                  color: Colors.white,
+                                ),
+                        ),
                       ),
                       GestureDetector(
                         onTap: () {
@@ -162,20 +172,24 @@ class HomePage extends ConsumerWidget {
                           height: 60,
                           width: 160,
                           decoration: const BoxDecoration(
-                              gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: [Colors.pink, Colors.red]),
-                              color: Colors.blue,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(12.0))),
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [Colors.pink, Colors.red],
+                            ),
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(12.0),
+                            ),
+                          ),
                           child: Text(
                             'Clear',
                             style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: GoogleFonts.openSans().fontFamily),
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: GoogleFonts.openSans().fontFamily,
+                            ),
                           ),
                         ),
                       ),
