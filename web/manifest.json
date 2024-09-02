@@ -1,6 +1,6 @@
 {
-    "name": "ai_image_generator",
-    "short_name": "ai_image_generator",
+    "name": "text_to_image",
+    "short_name": "text_to_image",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
