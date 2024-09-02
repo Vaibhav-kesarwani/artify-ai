@@ -1,19 +1,22 @@
-import 'package:ai_image_generator/Screens/Home/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:text_to_image/views/home/home.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  await dotenv.load();
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Ai Image Generator',
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: HomePage(),
     );
   }
 }
