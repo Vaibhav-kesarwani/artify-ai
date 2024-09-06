@@ -55,6 +55,88 @@ flutter build apk
 > flutter run
 > ```
 
+## File Structure
+Here is an overview of the project directory structure:
+```lua
+artify-ai/
+├── .dart_tool
+├── .idea 
+├── android
+│   ├── .gradle
+│   ├── app
+│   ├── gradle
+│   ├── .gitignore
+│   ├── build.gradle
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   └── settings.gradle
+│
+├── build
+│   ├── app
+│   ├── b62cd....5e
+│   ├── kotlin
+│   ├── path_provider_android
+│   └── cache.dill.track.dill
+│
+├── image
+│   └── app.png
+│
+├── ios
+│   ├── Flutter
+│   ├── Runner
+│   ├── Runner.xcodeproj
+│   ├── Runner.xcworkspace
+│   ├── RunnerTests
+│   └── .gitignore
+│
+├── lib
+│   ├── app
+│   ├── views
+│   └── main.dart
+│
+├── linux
+│   ├── flutter
+│   ├── .gitignore
+│   ├── CMakeLists.txt
+│   ├── main.cc
+│   ├── my_application.cc
+│   └── my_application.h
+│
+├── macos
+│   ├── Flutter
+│   ├── Runner
+│   ├── Runner.xcodeproj
+│   ├── Runner.xcworkspace
+│   ├── RunnerTests
+│   └── .gitignore
+│
+├── test
+│   └── widget_test.dart
+│  
+├── web
+│   ├── icons
+│   ├── favicon.png
+│   ├── index.html
+│   └── manifest.json
+│
+├── windows
+│   ├── flutter
+│   ├── runner
+│   ├── .gitignore
+│   └── CMakeLists.txt
+│   
+├── .gitignore
+├── .metadata
+├── analysis_options.yaml
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+├── pubspec.lock
+├── pubspec.yaml
+└── README.md                 
+```
+
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
