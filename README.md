@@ -61,7 +61,7 @@ Here is an overview of the project directory structure:
 artify-ai/
 ├── .dart_tool
 ├── .idea 
-├── android
+├── android/
 │   ├── .gradle
 │   ├── app
 │   ├── gradle
@@ -73,17 +73,17 @@ artify-ai/
 │   ├── local.properties
 │   └── settings.gradle
 │
-├── build
+├── build/
 │   ├── app
 │   ├── b62cd....5e
 │   ├── kotlin
 │   ├── path_provider_android
 │   └── cache.dill.track.dill
 │
-├── image
+├── image/
 │   └── app.png
 │
-├── ios
+├── ios/
 │   ├── Flutter
 │   ├── Runner
 │   ├── Runner.xcodeproj
@@ -91,16 +91,16 @@ artify-ai/
 │   ├── RunnerTests
 │   └── .gitignore
 │
-├── lib
-│   ├── app
+├── lib/
+│   ├── app/
 │   │   └── app.dart   
-│   ├── views
-│   │     └── home
+│   ├── views/
+│   │     └── home/
 │   │         ├── home_provider.dart
 │   │         └── home.dart
 │   └── main.dart
 │
-├── linux
+├── linux/
 │   ├── flutter
 │   ├── .gitignore
 │   ├── CMakeLists.txt
@@ -108,7 +108,7 @@ artify-ai/
 │   ├── my_application.cc
 │   └── my_application.h
 │
-├── macos
+├── macos/
 │   ├── Flutter
 │   ├── Runner
 │   ├── Runner.xcodeproj
@@ -116,16 +116,16 @@ artify-ai/
 │   ├── RunnerTests
 │   └── .gitignore
 │
-├── test
+├── test/
 │   └── widget_test.dart
 │  
-├── web
+├── web/
 │   ├── icons
 │   ├── favicon.png
 │   ├── index.html
 │   └── manifest.json
 │
-├── windows
+├── windows/
 │   ├── flutter
 │   ├── runner
 │   ├── .gitignore
