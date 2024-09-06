@@ -93,7 +93,11 @@ artify-ai/
 │
 ├── lib
 │   ├── app
+│   │   └── app.dart   
 │   ├── views
+│   │     └── home
+│   │         ├── home_provider.dart
+│   │         └── home.dart
 │   └── main.dart
 │
 ├── linux
