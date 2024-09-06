@@ -20,9 +20,6 @@ Artify AI leverages state-of-the-art machine learning algorithms to interpret te
 - **Cross-Platform Support:** Runs on both Android and iOS devices.
 - **Real-Time Preview:** Get instant feedback as you type, with real-time image generation.
 
-## Apk Link
-- [Link](https://shorturl.at/REmeT)
-
 ## Screenshots
 
 <p align="center">
@@ -30,6 +27,8 @@ Artify AI leverages state-of-the-art machine learning algorithms to interpret te
   <img width=250 src="https://github.com/user-attachments/assets/0cac2cb4-c24e-4836-bbc2-18f9d7a081ec"/>
   <img width=250 src="https://github.com/user-attachments/assets/9833f0d0-26bf-445d-a372-ff7aedf21518"/>
 </p>
+
+### Apk : [Link](https://shorturl.at/REmeT)
 
 ## Technologies Used
 - **Flutter:** For building the cross-platform mobile application.
